@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">John Doe</h1>
+            <p class="text-lg mt-2">Web Developer & Designer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Hello! I'm John Doe, a passionate web developer with a knack for creating beautiful and functional websites. I specialize in front-end development and love bringing ideas to life through code.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Project One</h3>
+                    <p class="text-gray-600 mt-2">A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">View Project</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Project Two</h3>
+                    <p class="text-gray-600 mt-2">A personal blog platform with dynamic content using React.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">View Project</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Project Three</h3>
+                    <p class="text-gray-600 mt-2">A portfolio website showcasing my design skills.</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <ul class="flex flex-wrap justify-center gap-4">
+                <li class="bg-blue-600 text-white py-2 px-4 rounded-full">HTML</li>
+                <li class="bg-blue-600 text-white py-2 px-4 rounded-full">CSS</li>
+                <li class="bg-blue-600 text-white py-2 px-4 rounded-full">JavaScript</li>
+                <li class="bg-blue-600 text-white py-2 px-4 rounded-full">React</li>
+                <li class="bg-blue-600 text-white py-2 px-4 rounded-full">Tailwind CSS</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            <p class="text-lg text-gray-700 text-center max-w-2xl mx-auto">
+                Feel free to reach out for collaborations or just a friendly chat!
+            </p>
+            <div class="flex justify-center gap-6 mt-6">
+                <a href="mailto:john.doe@example.com" class="text-blue-600 hover:underline">john.doe@example.com</a>
+                <a href="https://linkedin.com" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
